@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    margin: 0%;
+    padding: 0%;
+    height: 75px;
+    width: 100%;
+    position: fixed;       
+    top: 0;
+    left: 0;
+    z-index: 9999;         /* 显示在最上层 */
+    display: flex;
+    opacity: 0.9;
+    align-items: center;
+    background-color: #eeeeee;
+    border: 1px solid #e6e7eb !important;
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+}
+.header_nav {
+    position: relative;
+    margin-left: -10px;
+}
+
+.header_textNav {
+    padding-right: 10px;
+    margin-left: 40px;
+}
+
+.header_textPublic {
+    padding: 0 30px;
+    float: left;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.header_textPublic:hover,
+.header_textChecked {
+    text-shadow: 0 0 10px #8b8b8b, 0 0 20px #8b8b8b, 0 0 40px #8b8b8b;
+    color: #000;
+}
+.header_textPublic{
+    color: #000;
+    text-decoration: none;
+}
+.header_navs {
+    position: absolute;
+    left: 70px;
+    top: -5px;
+    height: 5px;
+    width: 67px;
+    background-color: rgb(48, 48, 48);
+    transition: all 0.3s;
+}
+
+.header_textPublic:nth-of-type(1):hover~.header_navs {
+    left: 70px;
+}
+
+.header_textPublic:nth-of-type(2):hover~.header_navs {
+    left: 199px;
+}
+
+.header_textPublic:nth-of-type(3):hover~.header_navs {
+    left: 327px;
+}
+.header_textPublic:nth-of-type(4):hover~.header_navs {
+    left: 474px;
+}
+.header_textPublic:nth-of-type(5):hover~.header_navs {
+    left: 600px;
+}
+.loign{
+    position: absolute;
+    right: 20px;
+}
+.loign-ll{
+    color: black;
+    text-decoration: none;
+}
+.loign-si{
+    color: black;
+    text-decoration: none;
+}
+.image-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    position: relative;
+    left: 60px;
+    width: 46%;
+    height: 46%;
+}
+.homebody .bgimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.fuchuang{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-color: rgba(0,0,0,.88);
+    box-shadow: 0 0 15px #000;
+    transition: 0.5s;
+}
+.fuchuang:hover{
+    box-shadow: 0 0 15px #fffcfc;
+}
+.fc-no1{
+    display: flex;
+    padding: 15px;
+    position: relative;
+}
+.fc-about{
+    align-items: center;
+    display: flex;
+    font-family: SourceHanSans-Bold;
+    font-size: 1em;
+    height: 20px;
+    line-height: 1;
+    margin: 0;
+}
+.text-fc{
+    color: white;
+    align-items: flex-end;
+    display: flex;
+}
+.en{
+    font-family: SourceHanSans-Regular;
+    font-size: .75em;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+}
+.nr{
+    position: relative;
+    padding: 0 15px 15px;
+    font-family: SourceHanSans-Regular;
+    font-size: .75em;
+    line-height: 1.33333;
+}
+.fc-ima{
+    width: 68px;
+    height: 57px;
+    background-image: url("../素材/微信.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    box-sizing: border-box;
+    left: 83%;
+    top:15px;
+}
+.fc-imaf{
+    display: none;
+    width: 190px;
+    height: 190px;
+
+    background-image: url("../素材/qrcode.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 76px;
+    top: -14px;
+}
+.fc-ima:hover>.fc-imaf{
+    display: block;
+}
+.game-select{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-color: rgba(0,0,0,.88);
+    box-shadow: 0 0 15px #000;
+    transition: 0.5s;
+}
+.game-select:hover{
+    box-shadow: 0 0 15px #ffffff;
+}
+.gameima{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    background-image: url("../素材/1.png");
+    animation: gameima 10s infinite;
+}
+@keyframes gameima{
+    0%{
+        background-image: url("../素材/1.png");
+        opacity: 1;
+    }
+    25%{
+        background-image: url("../素材/崩坏.png");
+        opacity: 0.8;
+    }
+    50%{
+        background-image: url("../素材/崩坏.png");
+        opacity: 1;
+    }
+    75%{
+        background-image: url("../素材/arknights.png");
+        opacity: 1;
+    }
+    85%{
+        background-image: url("../素材/arknights.png");
+        opacity: 1;
+    }
+    100%{
+        background-image: url("../素材/1.png");
+        opacity: 1;
+    }
+}
+.foter{
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background-color: rgba(51,51,51,.88);
+}
+.foter-text{
+    padding: 10px;
+    font-family: SourceHanSans-Regular;
+    font-size: .75em;
+    line-height: 2;
+}

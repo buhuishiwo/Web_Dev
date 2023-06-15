@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI-LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+</head>
+<body>
+    <div class="header">
+        <div class="image-header">
+            <img src="../素材/百科.png" alt="">
+        </div>
+    </div>
+   <div class="container">
+       <div class="login-wrapper">
+           <div class="header1">注册</div>
+           <div class="form-warpper">
+               <input type="text" id="username" name="username" placeholder="应以字母开头，长度为6-10个字符" class="input-item">
+               <input type="password" id="password" name="password" placeholder="密码不能与用户名相同" class="input-item">
+               <div class="btn"><a href="./sign.html" onclick="validateForm()">注册</a></div>
+           </div>
+       </div>
+   </div> 
+   <script>
+    function validateForm() {
+
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if (!/^[a-zA-Z][a-zA-Z0-9]{5,19}$/.test(username)) {
+alert("用户名格式错误。应以字母开头，长度为6-10个字符");
+event.preventDefault();
+return 0;
+}
+
+if (password.length < 6) {
+alert("密码长度必须大于6个字符！");
+event.preventDefault();
+return 0;
+}
+if (password === username) {
+alert("密码和用户名不能相同");
+event.preventDefault();
+return 0;
+}
+
+alert("注册成功！！欢迎您");
+return true;
+}
+</script> 
+</body>
+</html>

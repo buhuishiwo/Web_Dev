@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI game</title>
+    <link rel="stylesheet" href="../CSS/cWIKI.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="image-header">
+            <img class="icon" src="../素材/百科.png" alt="">
+        </div>
+        <nav class="header_nav">
+            <div class="header_textNav">
+                <a href="./index.html" class="header_textPublic ">
+                    WIKI首页
+                </a>
+                <a href="./cWIKI.html" class="header_textPublic header_textChecked">
+                    角色WIKI
+                </a>
+                <a href="./cImage.html" class="header_textPublic">
+                    游戏图鉴
+                </a>
+                <a href="./Genshininf.html" class="header_textPublic " >
+                    原神资讯
+                </a>
+                <a href="./Arknightsinf.html" class="header_textPublic ">
+                    明日方舟资讯
+                </a>
+                <div class="header_navs">
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="homebody">
+        <div class="bgimg">
+            <div class="video">
+                <video src="../素材/序列 01.mp4" style="width: 100vw; " loop="loop" muted="muted" autoplay >
+                
+                </video>
+            </div>
+        </div>
+        <div class="imagechange">
+            <div class="bigimage">
+                <img src="../原神立绘/i1.png" id="mainImage" alt="" style="width: 85%;" class="mainimage">
+            </div>
+            <div class="imaname">
+                <img src="../原神立绘/s1.png" id="mainImage1" alt="" class="mainimage1" style="width: 450px;">
+            </div>
+            <div class="imalogo">
+                <img src="../原神立绘/m1.png" id="mainImage2" alt="" class="mainimage2">
+            </div>
+            <div class="imatext">
+
+            </div>
+            <div class="textimage">
+                <img src="../原神立绘/d1.png" id="mainImage3" alt="" class="mainimage3" alt="">
+            </div>
+            <div class="smallchange">
+                    <div class="texts1" data-text="温迪">
+                        <img src="../原神立绘/y1.png" alt="温迪" id="s1" class="simage" onclick="changeImage('../原神立绘/i1.png'); changeImage1('../原神立绘/s1.png'); changeImage2('../原神立绘/m1.png'); changeImage3('../原神立绘/d1.png')">
+                    </div>
+                    <div class="texts2" data-text="钟离">
+                        <img src="../原神立绘/y2.png" id="s2" class="simage" onclick="changeImage('../原神立绘/i2.png'); changeImage1('../原神立绘/s2.png'); changeImage2('../原神立绘/m2.png'); changeImage3('../原神立绘/d2.png')">
+                    </div>
+                    <div class="texts3" data-text="可莉">
+                        <img src="../原神立绘/y3.png" id="s3" class="simage" onclick="changeImage('../原神立绘/i3.png'); changeImage1('../原神立绘/s3.png'); changeImage2('../原神立绘/m3.png'); changeImage3('../原神立绘/d3.png')">
+                    </div>
+                    <div class="texts4" data-text="纳西妲">
+                        <img src="../原神立绘/y4.png" id="s4" class="simage" onclick="changeImage('../原神立绘/i4.png'); changeImage1('../原神立绘/s4.png'); changeImage2('../原神立绘/m4.png'); changeImage3('../原神立绘/d4.png')">
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    function changeImage(imageName) {
+      var mainImage = document.getElementById('mainImage');
+      mainImage.style.opacity = 0;
+      setTimeout(function() {
+        mainImage.src = imageName;
+        mainImage.style.opacity = 1;
+      }, 500);
+    }
+    function changeImage1(imageName1) {
+        var mainImage1 = document.getElementById('mainImage1');
+        mainImage1.style.opacity = 0;
+        setTimeout(function() {
+            mainImage1.src = imageName1;
+            mainImage1.style.opacity = 1;
+          }, 500);
+    }
+    function changeImage2(imageName2) {
+        var mainImage2 = document.getElementById('mainImage2');
+        mainImage2.style.opacity = 0;
+        setTimeout(function() {
+            mainImage2.src = imageName2;
+            mainImage2.style.opacity = 1;
+          }, 500);
+    } 
+    function changeImage3(imageName3) {
+        var mainImage3 = document.getElementById('mainImage3');
+        mainImage3.style.opacity = 0;
+        setTimeout(function() {
+            mainImage3.src = imageName3;
+            mainImage3.style.opacity = 1;
+          }, 500);
+    }           
+   
+    </script>
+</body>
+</html>

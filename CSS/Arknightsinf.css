@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    margin: 0%;
+    padding: 0%;
+    height: 75px;
+    width: 100%;
+    position: fixed;       
+    top: 0;
+    left: 0;
+    z-index: 9999;         /* 显示在最上层 */
+    display: flex;
+    opacity: 0.9;
+    align-items: center;
+    background-color: #eeeeee;
+    border: 1px solid #e6e7eb !important;
+    box-shadow: 0px 3px 7px 0px rgb(0 0 0 / 35%);
+}
+.header_nav {
+    position: relative;
+    margin-left: -10px;
+}
+
+.header_textNav {
+    padding-right: 10px;
+    margin-left: 40px;
+}
+
+.header_textPublic {
+    padding: 0 30px;
+    float: left;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.header_textPublic:hover,
+.header_textChecked {
+    text-shadow: 0 0 10px #8b8b8b, 0 0 20px #8b8b8b, 0 0 40px #8b8b8b;
+    color: #000;
+}
+.header_textPublic{
+    color: #000;
+    text-decoration: none;
+}
+.header_navs {
+    position: absolute;
+    left: 600px;
+    top: -5px;
+    height: 5px;
+    width: 67px;
+    background-color: rgb(48, 48, 48);
+    transition: all 0.3s;
+}
+
+.header_textPublic:nth-of-type(1):hover~.header_navs {
+    left: 70px;
+}
+
+.header_textPublic:nth-of-type(2):hover~.header_navs {
+    left: 199px;
+}
+
+.header_textPublic:nth-of-type(3):hover~.header_navs {
+    left: 327px;
+}
+.header_textPublic:nth-of-type(4):hover~.header_navs {
+    left: 457px;
+}
+.header_textPublic:nth-of-type(5):hover~.header_navs {
+    left: 600px;
+}
+.loign{
+    position: absolute;
+    right: 20px;
+}
+.loign-ll{
+    color: black;
+    text-decoration: none;
+}
+.loign-si{
+    color: black;
+    text-decoration: none;
+}
+.image-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    position: relative;
+    left: 60px;
+    width: 46%;
+    height: 46%;
+}
+.homebody .bgimg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    filter: blur(5px);
+}
+.mainbody{
+    position: absolute;
+    top: 130px;
+    left: 115px;
+    width: 1700px;
+    height: 10vh;
+    
+
+}
+.news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+
+}
+
+.news_text {
+    position: relative;
+    margin: 100px auto 60px;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+
+.shouye_new_neiron {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    height: 400px;
+    box-shadow: 0 0 15px #000;
+}
+
+.shouye_new_neiron .new_lunbo,
+.shouye_new_neiron .new_you_neiron {
+    overflow: hidden;
+    position: relative;
+    width: 640px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.shouye_new_neiron .new_lunbo ul {
+    width: calc(640px*4);
+    transition: all 0.7s;
+}
+
+.shouye_new_neiron .new_lunbo ul li {
+    float: left;
+    width: 640px;
+    height: 400px;
+}
+
+.shouye_new_neiron .new_lunbo ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.shouye_new_neiron .new_lunbo input {
+    display: none;
+}
+
+.shouye_new_neiron .new_lunbo label {
+    position: absolute;
+    z-index: 999;
+    top: 370px;
+    width: 18px;
+    height: 18px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.shouye_new_neiron .new_lunbo label:nth-of-type(1) {
+    left: 40%;
+}
+
+.shouye_new_neiron .new_lunbo label:nth-of-type(2) {
+    left: 45%;
+}
+
+.shouye_new_neiron .new_lunbo label:nth-of-type(3) {
+    left: 50%;
+}
+
+.shouye_new_neiron .new_lunbo label:nth-of-type(4) {
+    left: 55%;
+}
+
+.shouye_new_neiron .new_lunbo #lbt_1:checked~ul {
+    margin-left: 0px;
+}
+
+.shouye_new_neiron .new_lunbo #lbt_1:checked~label:nth-of-type(1) {
+    background: rgb(0, 0, 0);
+}
+
+
+.shouye_new_neiron .new_lunbo #lbt_2:checked~ul {
+    margin-left: -640px;
+}
+
+.shouye_new_neiron .new_lunbo #lbt_2:checked~label:nth-of-type(2) {
+    background: rgb(0, 0, 0);
+}
+
+.shouye_new_neiron .new_lunbo #lbt_3:checked~ul {
+    margin-left: -1280px;
+}
+
+.shouye_new_neiron .new_lunbo #lbt_3:checked~label:nth-of-type(3) {
+    background: rgb(0, 0, 0);
+}
+
+.shouye_new_neiron .new_lunbo #lbt_4:checked~ul {
+    margin-left: -1920px;
+}
+
+.shouye_new_neiron .new_lunbo #lbt_4:checked~label:nth-of-type(4) {
+    background: rgb(0, 0, 0);
+}
+
+.shouye_new_neiron .new_you_neiron input {
+    display: none;
+}
+
+.shouye_new_neiron .new_you_neiron label {
+    position: relative;
+    left: 20px;
+    padding: 0 19px 12px;
+    display: inline-block;
+    margin: 35px 0px 0px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.shouye_new_neiron .new_you_neiron ul {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.new_you_bottom li div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.new_you_bottom li div p:first-of-type {
+    width: 480px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 11px;
+    transition: 0.5s;
+}
+
+.new_you_bottom li div p:last-of-type {
+    position: absolute;
+    top: 0;
+    right: 11px;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    transition: 0.5s;
+}
+
+.new_you_bottom>p {
+    position: absolute;
+    right: 33px;
+    bottom: 30px;
+    padding-left: 38px;
+    height: 22px;
+    background: url("../素材/新闻符号1.png") no-repeat;
+    line-height: 22px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    
+}
+.new_you_bottom li{
+    transition: 0.5s;
+}
+.new_you_bottom li:hover {
+    background: #22bbff;
+    
+}
+.new_you_bottom a{
+    color: #fff;
+    text-decoration: none;
+}
+.new_you_bottom li:hover a{
+    color: #000;
+}
+.new_you_bottom>p:hover {
+    color: #ffd49f;
+    background: url("../素材/新闻符号.png") no-repeat;
+}
+
+.new_you_bottom {
+    display: none;
+}
+
+#max_new:checked~label:nth-of-type(1) {
+    color: #ffd49f;
+    border-bottom: #ffd49f 3px solid;
+}
+
+#max_new:checked~ul:nth-of-type(1) {
+    display: block;
+}
+
+#new:checked~label:nth-of-type(2) {
+    color: #ffd49f;
+    border-bottom: #ffd49f 3px solid;
+}
+
+#new:checked~ul:nth-of-type(2) {
+    display: block;
+}
+
+#gong_gao:checked~label:nth-of-type(3) {
+    color: #ffd49f;
+    border-bottom: #ffd49f 3px solid;
+}
+
+#gong_gao:checked~ul:nth-of-type(3) {
+    display: block;
+}
+
+#active:checked~label:nth-of-type(4) {
+    color: #ffd49f;
+    border-bottom: #ffd49f 3px solid;
+}
+
+#active:checked~ul:nth-of-type(4) {
+    display: block;
+}

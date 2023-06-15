@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI-SIGN</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/sign.css">
+</head>
+<body>
+    <div class="header">
+        <div class="image-header">
+            <img src="../素材/百科.png" alt="">
+        </div>
+    </div>
+   <div class="container">
+       <div class="login-wrapper">
+           <div class="header1">登录</div>
+           <div class="form-warpper">
+               <input type="text" id="username" name="username" placeholder="username" class="input-item">
+               <input type="password" id="password" name="password" placeholder="password" class="input-item">
+               <div class="btn"><a href="./login-ok.html" onclick="validateForm()">登录</a></div>
+           </div>
+           <div class="msg">
+               没有账号？<a href="./login.html">注册</a>
+           </div>
+       </div>
+   </div> 
+   <script>
+        function validateForm() {
+
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if (!/^[a-zA-Z][a-zA-Z0-9]{5,19}$/.test(username)) {
+  alert("密码或用户名错误");
+  event.preventDefault();
+  return 0;
+}
+
+if (password.length < 6 || password.length > 20) {
+  alert("密码长度必须为6-20个字符！");
+  event.preventDefault();
+  return 0;
+}
+if (password === username) {
+  alert("密码或用户名错误");
+  event.preventDefault();
+  return 0;
+}
+
+alert("登陆成功");
+return true;
+}
+   </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans Light';         
+    letter-spacing: .05em;
+}
+.header{
+    margin: 0%;
+    padding: 0%;
+    height: 75px;
+    width: 100%;
+    position: fixed;       
+    top: 0;
+    left: 0;
+    z-index: 9999;         /* 显示在最上层 */
+    display: flex;
+    opacity: 0.9;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee;
+    border: 1px solid #e6e7eb !important;
+    box-shadow:  0 0 15px #000;
+}
+.image-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 46%;
+    height: 46%;
+}
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    background-image: url(../素材/arknew.png);
+}
+
+.login-wrapper{
+    background-color: #fff;
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.9;
+    box-shadow: 0 0 15px #000;
+}
+
+.login-wrapper .header1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+}
+
+.login-wrapper .form-warpper .input-item{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128,125,125);
+    font-size: 15px;
+    outline: none;
+}
+
+.login-wrapper .form-warpper .input-item::placeholder{
+    text-transform: uppercase;
+}
+
+.login-wrapper .form-warpper .btn{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right,#a6c1ee,#fbc2eb);
+    color:#fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
